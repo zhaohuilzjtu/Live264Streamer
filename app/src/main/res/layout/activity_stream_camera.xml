@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hzy.live.streamer.widget.CameraSurfaceView
+        android:id="@+id/camera_surface"
+        android:layout_width="240dp"
+        android:layout_height="320dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/change_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_camera" />
+
+        <Button
+            android:id="@+id/start_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_server" />
+
+        <Button
+            android:id="@+id/stop_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_server" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stream_session_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/qr_code_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#cccccc" />
+
+</LinearLayout>

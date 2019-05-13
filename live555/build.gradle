@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_PLATFORM_LEVEL=16"
+            }
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            externalNativeBuild {
+                cmake {
+                    cFlags.add('-DNATIVE_LOG -DDEBUG')
+                    cppFlags.add('-DNATIVE_LOG -DDEBUG')
+                }
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

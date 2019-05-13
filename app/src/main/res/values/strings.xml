@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Live555</string>
+    <string name="qrcode_scan_intro">将二维码/条码放入框内，即可自动扫描。</string>
+    <string name="qr_tips_too_dark">环境过暗，请打开闪光灯</string>
+    <string name="qr_tip_scan_timeout">扫描超时了</string>
+    <string name="stream_screen">录屏直播</string>
+    <string name="stream_camera">相机直播</string>
+    <string name="scan_to_play">扫码看直播</string>
+    <string name="start_server">开启</string>
+    <string name="stop_server">停止</string>
+    <string name="change_camera">翻转</string>
+</resources>
