@@ -12,7 +12,7 @@ android {
                 arguments "-DANDROID_PLATFORM_LEVEL=16"
             }
             ndk {
-                abiFilters "armeabi-v7a"
+                abiFilters "armeabi-v7a", "x86"
             }
         }
     }

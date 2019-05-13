@@ -3,7 +3,7 @@ A Project To Study Stream H264 Video With Live555
 
 [![Travis](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/huzongyao/Live264Streamer)
 [![Travis](https://img.shields.io/badge/API-21+-brightgreen.svg)](https://github.com/huzongyao/Live264Streamer)
-[![Travis](https://img.shields.io/badge/live555-v1.0.0-brightgreen.svg)](https://github.com/huzongyao/Live264Streamer)
+[![Travis](https://img.shields.io/badge/live555-v1.0.0-brightgreen.svg)](https://github.com/huzongyao/Live264Streamer/releases)
 
 ### Introduction
 学习多媒体相关知识，相机/音视频编解码/网络直播RTSP等
@@ -11,6 +11,16 @@ A Project To Study Stream H264 Video With Live555
 #### 实现功能
 * 使用RTSP共享设备屏幕录屏
 * 使用RTSP共享相机视频直播
+* 扫码播放RTSP直播
+
+#### 下载体验
+* apk下载： https://github.com/huzongyao/Live264Streamer/releases
+* 播放器VLC：https://www.videolan.org/
+
+#### Screenshot
+| Stream Push | VLC Play  | VLC Play |
+| ----------- |:-----------:| ---------:|
+| ![screenshot](https://github.com/huzongyao/Live264Streamer/blob/master/misc/screen0.png?raw=true)| ![screenshot](https://github.com/huzongyao/Live264Streamer/blob/master/misc/screen1.png?raw=true)| ![screenshot](https://github.com/huzongyao/Live264Streamer/blob/master/misc/screen2.png?raw=true)|
 
 #### 涉及知识点
 * 屏幕录像并将其硬编成H264:
